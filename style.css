@@ -1,22 +1,28 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    /* margin: 0;
+    padding: 0; */
+} 
 body{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, aqua, blue , #05113E );
+    background-image: url("https://cdn.pixabay.com/photo/2020/07/09/13/36/abstract-5387366_960_720.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
     
 } 
 .calculator{
     display: grid;
     grid-template-columns: repeat(4,100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-    background-color: black;
-    border-radius: 3%;
+    background-image: linear-gradient(to right, aqua, blue , #05113E );
+    border-radius: 3%; 
+    border: 1px solid black;
+    padding: 20px;
     
     
 }  
@@ -30,24 +36,51 @@ body{
     word-break:break-all ;
     grid-area: 1/1/2/span 4;
     color:#fff;
-    padding: 10px;
+    /* padding: 10px; */ 
     font-weight: bold;
     font-size: 2rem;
     border-radius: 10px 10px 10px 10px;
     margin-bottom:10px ;
-
+    box-sizing: border-box;
+    
 }
 .output1{
     font-size: 1.5rem;
     opacity: 0.5;
+    
+    
 }
+
 button{
     outline: none;
     border-radius: 50%;
     cursor: pointer;
     margin-bottom: 20px;
     margin-left: 10px;
+    font-family: 'Lora', serif;
+    font-size: 20px;
 }
 button:hover{
     background-color: indigo;
+}
+
+.equal { 
+    grid-area: 6/3/7/5;
+    padding-right: 10px;
+    
+}
+
+.clear { 
+    grid-area: 2/3/3/4;
+}
+.operators { 
+    grid-area: 2/4/6/5;
+}
+.operators {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+.operators > .btn {
+    flex: 2
 }
