@@ -5,39 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
     
 </head>
 <body>
-<div class="calculator">
+    <div class="calculator">
         <div class="screen">
-        <div class="output1">56</div>
-        <div class  ="output2">77</div>
-    </div><br><br>
+            <p class="output1">2</p>
+            <p class ="output2">1+1</p>
+        </div>
         
-        <button class="clearAll">AC</button>    
+        <button class="btn" data-num="9">9</button>
+        <button class="btn" data-num="8">8</button>
+        <button class="btn" data-num="7">7</button>
+        <button class="btn" data-num="6">6</button>
+        <button class="btn" data-num="5">5</button>
+        <button class="btn" data-num="4">4</button>
+        <button class="btn" data-num="3">3</button>
+        <button class="btn" data-num="2">2</button>
+        <button class="btn" data-num="1">1</button>
+        <button class="btn" data-num="0">0</button>
+        <button class="btn" data-num=".">.</button>
+        
+        <div class="operators">
+            
+            <button class="btn" data-num="+">+</button>
+            <button class="btn" data-num="/">÷</button>    
+            <button class="btn" data-num="-">-</button>
+            <button class="btn" data-num="*">*</button>
+        </div>
         <button class="clear">Del</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>.</button>
-        <button>0</button>
-        <button class="eqaul">=</button>
-    
-    <div class="operators">
-
-        <button>+</button>
-        <button>/</button>    
-        <button>-</button>
-        <button>*</button>
+        <button class="clearAll">AC</button>    
+        <button class="equal">=</button>
     </div>
-</div>
     
+    <script src="script.js"></script>  
 </body>
 </html>
