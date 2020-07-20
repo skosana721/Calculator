@@ -1,10 +1,10 @@
-const output2 = document.querySelector('.output2');
-const output1 = document.querySelector('.output1');
-const btns = document.querySelectorAll('.btn') ;
-const equal = document.querySelector('.equal') ;
-const clear = document.querySelector('.clear') ;
-const clearAll = document.querySelector('.clearAll');
-
+let output2 = document.querySelector('.output2');
+let output1 = document.querySelector('.output1');
+let btns = document.querySelectorAll('.btn') ;
+let equal = document.querySelector('.equal') ;
+let clear = document.querySelector('.clear') ;
+let clearAll = document.querySelector('.clearAll');
+    
 btns.forEach(btn => {
     btn.addEventListener('click' , () => {
         let content = btn.getAttribute('data-num');
