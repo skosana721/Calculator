@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0; 
 } 
 body{
     height: 100vh;
@@ -14,20 +14,21 @@ body{
     font-family: 'Lora', serif;
     box-sizing: border-box;
     
+    
 } 
+
 .calculator{
     display: grid;
     grid-template-columns: repeat(4,100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-    background-image: radial-gradient(grey , black);
-    
+    background-image: radial-gradient( grey, black);
     border-radius: 3%; 
     border: 1px solid black;
     padding: 20px;
     
     
 }  
-.screen{
+.display{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -43,6 +44,7 @@ body{
     border-radius: 10px 10px 10px 10px;
     margin-bottom:10px ;
     box-sizing: border-box;
+    
     
 }
 .output1{
@@ -62,7 +64,7 @@ button{
     font-size: 20px;
 }
 button:hover{
-    background-color: indigo;
+    background-color: blue;
 }
 
 .equal { 
