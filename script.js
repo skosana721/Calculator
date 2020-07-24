@@ -18,7 +18,7 @@ clearAll.addEventListener('click' , () => {
 equal.addEventListener('click' , () => {
     let expression = output2.textContent ;
     output2.textContent = eval(expression);
-    output1.textContent = eval(expressioni);
+    output1.textContent = eval(expression);
 })
 clear.addEventListener('click', ()=>{
     let str = output2.textContent ;
